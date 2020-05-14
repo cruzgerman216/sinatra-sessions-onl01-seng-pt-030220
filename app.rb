@@ -44,6 +44,7 @@ class App < Sinatra::Base
       redirect '/fetch_session_id'
     else
       "Session ID has not been set!"
+      session[:id] = 1
     end
   end
 
